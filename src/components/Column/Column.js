@@ -14,7 +14,6 @@ class Column extends React.Component {
     static propTypes = {
         title: PropTypes.node.isRequired,
         cards: PropTypes.array,
-        name: PropTypes.node,
       }
 
     addCard(title){
@@ -36,7 +35,7 @@ class Column extends React.Component {
             <section className={styles.component}>
                 <h3 className={styles.title}>{this.props.title}
                     <span className={styles.icon}>
-                        <Icon name={this.props.icon} />
+                        <Icon name={this.props.icon}/>
                     </span>
                 </h3>
                 <div>
