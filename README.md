@@ -1,1 +1,1 @@
-https://git.heroku.com/frozen-headland-46511.git
+https://frozen-headland-46511.herokuapp.com/
