@@ -1,1 +1,1 @@
-web: node src/index.js
+web: http-server dist
