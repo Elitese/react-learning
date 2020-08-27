@@ -1,22 +1,18 @@
 import React from 'react';
 import Container from '../Container/Container';
 import Hero from '../Hero/Hero.js';
-import PropTypes from 'prop-types';
 import { info } from '../../data/dataStore';
+import styles from './Info.scss';
 
 const {title, image, content} = info;
 
 const Info = () => (
   <Container>
-    <Hero titleText={title} backgroundImage={image} />
-    <div>{content}</div>
+    <section className={styles.component}>
+      <Hero titleText={title} backgroundImage={image} />
+      <div>{content}</div>
+    </section>
   </Container>
 );
-
-Info.protoTypes = {
-  title: PropTypes.node,
-  image: PropTypes.node,
-  content: PropTypes.node,
-};
 
 export default Info;
